@@ -1,7 +1,5 @@
 # First Python code to display "Hello World!" on the console
 print("Hello World!")
-<<<<<<< HEAD
-
 name = "Chris"
 print(f"Your name is of {type(name)}")
 
@@ -14,6 +12,3 @@ list2 = [6,7,8,9,10]
 
 list1.extend(list2)
 print(list1)
-
-=======
->>>>>>> 87e155f41c9529d47103b96ed309ed8d312fc46f
