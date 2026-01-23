@@ -4,7 +4,7 @@ num1 = int(input('Enter the first number to be used in the calculation:\n'))
 num2 = int(input('Enter the second number to be used in the calculation:\n'))
 
 #Addition: Get the sum of the two numbers
-sum = num1 + num2
+summation = num1 + num2
 
 #Difference/subtraction
 difference = num1 - num2
@@ -24,7 +24,7 @@ modulus = num1 % num2
 exponent = num1 ** num2
 
 #Display results
-print(f"Addition: {num1} + {num2} = {sum}")
+print(f"Addition: {num1} + {num2} = {summation}")
 print(f"Subtraction: {num1} - {num2} = {difference}")
 print(f"Multiplication: {num1} * {num2} = {product}")
 print(f"Floating Division: {num1} / {num2} = {floating_division}")
