@@ -64,7 +64,7 @@ class Circle:
         """
         return (f"Circle's Dimensions"
                 f"\n"+ "-" * 40 +
-                f"Radius: {self.radius} cm."
+                f"\nRadius: {self.radius} cm."
                 f"\nArea: {self.calc_area():.2f} cm^2."
                 f"\nCircumference: {self.calc_circumference():.2f} cm."
                 f"\n" + "-" * 40)
