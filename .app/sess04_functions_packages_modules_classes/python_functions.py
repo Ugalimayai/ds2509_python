@@ -71,7 +71,7 @@ print(f"The sum of 2 and 5 is: {add_five(2)}")
 difference = lambda num1, num2: num1 - num2
 print(f"The difference between 2 and 5 is: {difference(2,5)}")
 
-#function with variable params
+#function with variable number of arguments
 # define a function that accepts a varying number of parameters
 def get_sum(*values):
     #sum = 0

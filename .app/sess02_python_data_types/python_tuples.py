@@ -1,5 +1,5 @@
 """
-a tuple is a built-in data type that represents an ordered collection of elements of the same type
+a tuple is a built-in data type that represents an  indexable ordered collection of elements
 tuples allow duplicates and are immutable(the elements cannot be modified)
 tuples are created using () rounded brackets/parentheses or the tuple() function
 tuples are generally faster than lists as python doesn't have to worry about growing or  shrinking tuples
@@ -58,4 +58,42 @@ print(any_true) #this should print true as there are no non-zero values/elements
 #will return true as all values in the numbers tuple are non-zero
 all_true = all(numbers)
 print(all_true)
+
+# a tuple can have a nested tuple inside it
+
+seq = (2,'a', 4, (1,6,7,8,23,3), 77)
+print(f"The nested tuple inside our 'seq' tuple is: {seq[3]}")
+print(f"We can slice inside our nested tuple: {seq[3][0:3]}")
+
+#we use tuples to conveniently swap variable values
+x = 1
+y = 2
+print(f"The value of x is: {x}")
+print(f"The value of y is: {y}")
+(x,y) = (y,x) #this is more convenient than first creating a temp variable to hold values
+print(f"After swapping using tuple assignment, the value of x is %s and the value of y is %s" % (x,y))
+
+#we can also use tuples to return more than one value from a function
+def char_counts(s):
+    """
+    s is a string of lowercase chars
+    returns a tuple where the first value is the number of vowels in s
+    and the second value is the number of consonants in s
+    """
+    s = s.strip().lower()
+    vowels = ('a','e','i', 'o', 'u')
+    consonant_count = 0
+    vowel_count = 0
+    for i in s:
+        if i in vowels:
+            vowel_count += 1
+        elif i == " ":
+            pass
+        else:
+            consonant_count += 1
+
+    return (vowel_count, consonant_count)
+text = "Return of the Mac"
+print(f"The number of vowels in {text} is {char_counts(text)[0]}"
+      f" and the number of consonants in {text} is {char_counts(text)[1]}")
 

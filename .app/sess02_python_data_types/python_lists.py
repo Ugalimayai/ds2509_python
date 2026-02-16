@@ -19,6 +19,7 @@ fruits.append("orange")
 print(f"After adding 'orange' to the fruit list we get: {fruits}")
 
 #Add the contents of another list of fruits to our fruit list
+#extend allows us to add more than one element as compared to append
 fruits.extend(["pineapple", "avocado", "pears", "apple"])
 print(f"The combined list of fruits is:\n {fruits}")
 
