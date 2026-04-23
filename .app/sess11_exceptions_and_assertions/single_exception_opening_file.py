@@ -7,5 +7,5 @@ try: #write code that may raise an exception here
 except FileNotFoundError: # Handle the file error here
     print("Error, sorry the file was not found.\nPlease check the path and file name & ensure you have access permissions, then try again.")
 finally:
-    if 'file' in locals():
+    if 'file' in locals(): # locals() is part of the resources allocated to the file for Runtime
         file.close()
