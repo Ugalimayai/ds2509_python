@@ -20,4 +20,5 @@ else:
     print(f"The 'p1' variable is an instance of '{type(p1)}' class.'")
 
 # Use the dir() method to list the attributes and methods of the 'p1' object
-print(f"Attributes and methods of the 'p1' object are:\n{p1.__dir__()}")
+print(f"Attributes and methods of the 'p1' object are:\n"
+      f"{dir(p1)}")
